@@ -58,7 +58,7 @@ function getDirContents($dir, &$results = array()) {
 
 if(isset($_POST['Submit'])){
 
-	if($_POST['usr'] == "admin" && $_POST['pdd'] == "palaguna_cpanel_33"){
+	if($_POST['usr'] == "admin" && $_POST['pdd'] == "hihihihihi"){
 
 
 		$scan  = getDirContents('../');
