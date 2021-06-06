@@ -8,7 +8,7 @@
 
       if(count($a) > 0){
 
-        $tujuan_report = "andikaisra7@gmail.com";
+        $tujuan_report = "YOUR_EMAIL_REPORTED"; // tujuan report
 
         $message = "Pengapusan File Mencurigakan Success!!<br>
                     Daftar File Yang Mencurigakan Tersebut Adalah:<br>"; 
@@ -27,9 +27,9 @@
         $mail->SMTPDebug = 2;
         $mail->Port = 587;
         $mail->SMTPAuth = true;
-        $mail->Username = "admin@rutanpangkajene.com"; //user email
-        $mail->Password = "(mTNs3^}TleM"; //password email 
-        $mail->SetFrom("admin@rutanpangkajene.com", "REPORT TROJAN/MALWARE DETECTED"); //set email pengirim
+        $mail->Username = "YOUR_EMAIL_USERNAME"; //user email
+        $mail->Password = "YOUR_EMAIL_PASSWORD"; //password email 
+        $mail->SetFrom("YOUR_EMAIL_USERNAME", "REPORT TROJAN/MALWARE DETECTED"); //set email pengirim
         $mail->Subject = "REPORT TROJAN/MALWARE DETECTED"; //subyek email
         $mail->AddAddress($tujuan_report);  //tujuan email
         $mail->MsgHTML($message);
